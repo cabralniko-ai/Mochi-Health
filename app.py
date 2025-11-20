@@ -16,8 +16,6 @@ sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/129DOutQCa3ZV
 
 # Streamlit UI
 st.title("Mood Ticketing Platorm")
-
-# Mood logging section
 st.header("Enter your Mood")
 
 mood_options = ["😊 Happy", "😠 Frustrated", "😕 Confused", "🎉 Excited"]
