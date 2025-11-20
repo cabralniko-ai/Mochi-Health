@@ -24,7 +24,7 @@ note = st.text_input("Optional note:")
 
 if st.button("Submit Mood"):
     date = datetime.now().strftime("%Y-%m-%d")
-    print('this is time stamp', date)
+    # print('this is time stamp', date)
     sheet.append_row([date, selected_mood, note])
     st.success("Mood logged!")
 
@@ -39,7 +39,7 @@ if not df.empty:
     today_df = df[df['cDate'] == today]
 
     if not today_df.empty:
-        print('test worked')
+        # print('test worked')
         mood_counts = today_df['mood'].value_counts().reset_index()
         mood_counts.columns = ['mood', 'count']  # rename columns to known names
         fig = px.bar(
